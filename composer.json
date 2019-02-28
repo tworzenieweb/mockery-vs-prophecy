@@ -1,0 +1,23 @@
+{
+    "name": "jobleads/unittesting",
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.2"
+    },
+    "require": {
+      "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jobleads\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jobleads\\": "tests/"
+        }
+    },
+    "scripts": {
+        "tests": "phpunit --colors=always --testdox -v tests"
+    }
+}
